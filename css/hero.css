@@ -1,5 +1,5 @@
 #hero {
-  background-color: rgb(205, 170, 170);
+  background-color: rgb(223, 201, 201);
   background-image: url("../images/bgr1.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -11,21 +11,21 @@
   align-items: flex-start;
   padding: 0 30px;
 }
-.hero__job {
+/* .hero__job {
   font-family: "Playfair Display", serif;
   font-size: 28px;
   line-height: 1.3;
   font-weight: 700;
   margin-bottom: 20px;
-}
+} */
 
-.hero__edu {
+/* .hero__edu {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
   margin-bottom: 50px;
   font-weight: 300;
   color: black;
-}
+} */
 
 .hero__btn {
   width: 300px;
