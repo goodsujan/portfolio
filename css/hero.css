@@ -1,6 +1,6 @@
 #hero {
-  background-color: white;
-  background-image: url("../images/hello.jpg");
+  background-color: rgb(205, 170, 170);
+  background-image: url("../images/bgr1.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
