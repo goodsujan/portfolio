@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300..700&display=swap"
     rel="stylesheet" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -200,8 +200,9 @@
     <h2 class="section__subtitle">contact</h2>
 
     <form action="" id="contactForm" class="contact__form" onsubmit="submitForm(event);">
-      <input type="text" placeholder="Name" id="name" name="name" class="contact__input" />
-      <textarea id="message" class="contact__textarea" name="message" placeholder="Message" rows="4"></textarea>
+      <input type="text" placeholder="Name" id="name" name="name" class="contact__input" required />
+      <textarea id="message" class="contact__textarea" name="message" placeholder="Message" rows="4"
+        required></textarea>
       <button class="contact__button" type="submit">Send Message</button>
     </form>
   </section>
@@ -213,6 +214,14 @@
 
     function submitForm(event) {
       event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
       alert("Thank you for your feedback!");
       document.getElementById("contactForm").reset();
     }

@@ -108,3 +108,16 @@
 .sidebar__copyright > span {
   color: #2c98f0;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    margin-left: 300px;
+  }
+  .sidebar__hamburger {
+    display: none;
+  }
+  .sidebar__content {
+    left: 0 !important;
+    transform: unset !important; /*edge case for mobile to desktop mode switch, while sidebar visible*/
+  }
+}
