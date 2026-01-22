@@ -3,7 +3,7 @@
   background-image: url("../images/bgr1.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size: 50%;
   height: 100vh;
   display: flex;
   flex-direction: column;

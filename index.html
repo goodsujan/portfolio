@@ -64,8 +64,8 @@
     <h2>
       <p>Electronics, Communication & Information Engineer</p>
     </h2>
-    <button>Contact Me <i class="fa-solid fa-envelope"></i></button>
-    <button class="hero__btn">Download CV <i class="fa fa-download"></i></button>
+    <a href="mailto:email@example.com" class="hero__btn">Contact Me <i class="fa-solid fa-envelope"></i></a>
+    <a href="#" class="hero__btn" download>Download CV <i class="fa fa-download"></i></a>
     <a href="https://adhikarisujan1.com.np/" class="hero__btn" target="_blank">Visit my portfolio</a>
   </section>
   </section>
@@ -182,7 +182,7 @@
 
     <div class="about__happy">
       <h2>I am happy to know you that 300+ projects done successfully!</h2>
-      <button>hire me</button>
+      <a href="https://www.linkedin.com/in/sujan-adhikari01/" target="_blank">hire me</a>
     </div>
   </section>
   <section id="work__count">
@@ -210,6 +210,12 @@
     hamburger.addEventListener("click", () => {
       hamburger.classList.toggle("sidebar__hamburger__translate");
     });
+
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you for your feedback!");
+      document.getElementById("contactForm").reset();
+    }
   </script>
 </body>
 
