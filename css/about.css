@@ -12,20 +12,20 @@
 }
 
 .about__box {
-  color: #fff;
+  color: #8689e1;
   border-bottom: 2px solid #2c98f0;
   padding: 24px;
   box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   margin-bottom: 50px;
 }
 
-.about__box > i {
+.about__box>i {
   margin-bottom: 20px;
   color: #2c98f0;
   font-size: 30px;
 }
 
-.about__box > h3 {
+.about__box>h3 {
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
@@ -38,7 +38,7 @@
   border-color: #ec5453;
 }
 
-.about__box:nth-child(2) > i {
+.about__box:nth-child(2)>i {
   color: #ec5453;
 }
 
@@ -46,7 +46,7 @@
   border-color: #f9bf3f;
 }
 
-.about__box:nth-child(3) > i {
+.about__box:nth-child(3)>i {
   color: #f9bf3f;
 }
 
@@ -54,7 +54,7 @@
   border-color: #a84cb8;
 }
 
-.about__box:last-child > i {
+.about__box:last-child>i {
   color: #a84cb8;
 }
 
@@ -63,7 +63,7 @@
   background: #f9bf3f;
 }
 
-.about__happy > h2 {
+.about__happy>h2 {
   font-family: "Playfair Display", serif;
   color: black;
   font-weight: normal;
@@ -72,7 +72,7 @@
   font-size: 30px;
 }
 
-.about__happy > button {
+.about__happy>button {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -83,6 +83,7 @@
   padding: 2px 10px;
   background: transparent;
 }
+
 /* ....... */
 /* ....... */
 @media screen and (min-width: 768px) {
@@ -91,6 +92,7 @@
     justify-content: space-between;
     gap: 30px;
   }
+
   .about__box {
     flex-grow: 1;
   }
